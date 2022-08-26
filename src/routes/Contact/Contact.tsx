@@ -1,9 +1,16 @@
 import React from 'react'
 import Template from '../../components/Template/Template'
 
+const content = (
+    <div>A</div>
+  )
+
+
 const Contact = () =>{
   return (
-    <Template content={<h3>Contact</h3>}/>
+    <Template 
+    title='Contact'
+    content={content}/>
   )
 }
 

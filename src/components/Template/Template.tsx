@@ -11,6 +11,7 @@ import styles from './_template.module.scss'
 
 
 interface templateContent{
+  title: string
   content?: JSX.Element
 }
 
@@ -66,10 +67,10 @@ const Template:FC<templateContent> = (props) => {
     onClick={deployMenu}/>
     </header>
     <main className={styles['main']}>
-      <div className={styles['main-content-container']}>
-        {props.content}  
-      </div>
+        <h1 className={styles['title']}>{props.title}</h1>
+        {props.content}
     </main>
+    {(props.title === 'Home') && <script src="https://cdn.jsdelivr.net/npm/macy@2"></script> }
     </>
   )
 }

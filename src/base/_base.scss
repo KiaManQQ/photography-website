@@ -22,6 +22,6 @@ img{
   @include config.laptop{
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows:  10vh 90vh; 
+    grid-template-rows:  10vh 1fr; 
    }
 }

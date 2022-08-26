@@ -59,7 +59,7 @@
     &__logo-container{
       width: 5rem;
       z-index: 10;
-      position: absolute;
+      position: fixed;
       top: 15%;
       left: calc(5% - 2.5rem);
     }
@@ -89,9 +89,6 @@
   }
 }
 
-.logo{
-  display: none;
-}
 
 
 .burger-icon{
@@ -160,22 +157,25 @@
 }
 
 .main{
-  padding-top: 3em;
   width: 100%;
-  height: 90vh;
   background-color: config.$background-color;
   color: config.$text-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 2rem;
+  padding-inline: .5rem;
   @include config.laptop{
-    padding-top: 0;
+    padding: .5rem 1rem;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    overflow: auto;
+    height: 90vh;
   }
 }
 
-.main-content-container{
-  width: 95%;
-  height: 95%;
+
+.title{
+  border-bottom: 2px solid config.$text-color;
+  padding-bottom: .2rem;
+  @include config.laptop{
+    border-top: 2px solid config.$text-color;
+  }
 }

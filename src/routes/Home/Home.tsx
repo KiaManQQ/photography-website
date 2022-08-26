@@ -1,24 +1,39 @@
 import React from 'react'
 import Template from '../../components/Template/Template'
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 const content = (
   <>
-  <h3>This is the home page</h3>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis veniam mollitia dolore voluptatibus obcaecati, laborum omnis temporibus velit, impedit iusto provident facere. Laboriosam voluptatem obcaecati corrupti perferendis ratione nostrum est?</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus obcaecati maxime quae, vitae, quo quisquam placeat dolores quaerat veritatis labore unde nulla error eligendi, impedit facilis ex possimus saepe amet?</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nostrum velit asperiores rem cum autem accusamus possimus repudiandae quas voluptas obcaecati consequatur vel. Quibusdam adipisci dicta, maiores provident tempore eaque.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deleniti dolore itaque quia eaque repellat blanditiis, amet fugiat dolorum eligendi, assumenda esse est odit quisquam suscipit commodi reprehenderit beatae pariatur?
-  Tempora excepturi repellat ea blanditiis odio unde soluta corporis. Quis qui consequuntur impedit, voluptates sequi quia distinctio porro ab obcaecati nam? Unde praesentium, autem facilis perferendis dolores quia aperiam repellat?
-  Deleniti, architecto libero enim laborum nulla voluptate itaque at facilis consequuntur blanditiis corrupti, totam similique provident dolore consectetur beatae optio. Error totam maxime unde ullam quaerat voluptatem aspernatur eos a?
-  Ullam magni modi enim, beatae recusandae quasi voluptatibus dolorem ducimus, sapiente delectus eveniet hic in fugiat aliquid numquam praesentium quae earum? Esse quia possimus quisquam, non molestias at eos placeat!</p>
-</>
+  <ResponsiveMasonry columnsCountBreakPoints={{400: 1, 750: 2, 900: 4}}>
+    <Masonry gutter='1rem'>
+      <img src={require('../../components/assets/img/gallery/1.webp')} alt='imagen de galería 1'/>
+      <img src={require('../../components/assets/img/gallery/2.webp')} alt='imagen de galería 2'/>
+      <img src={require('../../components/assets/img/gallery/3.webp')} alt='imagen de galería 3'/>
+      <img src={require('../../components/assets/img/gallery/4.webp')} alt='imagen de galería 4'/>
+      <img src={require('../../components/assets/img/gallery/5.webp')} alt='imagen de galería 5'/>
+      <img src={require('../../components/assets/img/gallery/6.webp')} alt='imagen de galería 6'/>
+      <img src={require('../../components/assets/img/gallery/7.webp')} alt='imagen de galería 7'/>
+      <img src={require('../../components/assets/img/gallery/8.webp')} alt='imagen de galería 8'/>
+      <img src={require('../../components/assets/img/gallery/9.webp')} alt='imagen de galería 9'/>
+      <img src={require('../../components/assets/img/gallery/1.webp')} alt='imagen de galería 1'/>
+      <img src={require('../../components/assets/img/gallery/2.webp')} alt='imagen de galería 2'/>
+      <img src={require('../../components/assets/img/gallery/3.webp')} alt='imagen de galería 3'/>
+      <img src={require('../../components/assets/img/gallery/6.webp')} alt='imagen de galería 6'/>
+      <img src={require('../../components/assets/img/gallery/7.webp')} alt='imagen de galería 7'/>
+      <img src={require('../../components/assets/img/gallery/1.webp')} alt='imagen de galería 1'/>
+      <img src={require('../../components/assets/img/gallery/2.webp')} alt='imagen de galería 2'/>
+    </Masonry>
+  </ResponsiveMasonry>
+  </>
 )
 
 const Home = () => {
   return (
     <Template 
+    title='Home'
     content={content}/>
     )
 }
+
 
 export default Home
