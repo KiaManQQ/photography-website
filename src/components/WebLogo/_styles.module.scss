@@ -1,0 +1,15 @@
+.logo{
+  cursor: pointer;
+  &--big{
+    width: 5rem;
+    height: 3.8rem;
+  }
+  &--small{
+    width: 4rem;
+    height: 3rem;
+  }
+  &--smaller{
+    width: 3rem;
+    height: 2.5;
+  }
+}

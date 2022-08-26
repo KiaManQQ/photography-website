@@ -1,0 +1,32 @@
+@use '/src/base/config';
+
+.social-media{
+  display: flex;
+  &__icon-container{
+    padding: 0 .7rem;
+  }
+  &__icon{
+    padding: .4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    &--twitter{
+      color: config.$background-color;
+      background-color: #fff;
+    }
+    &--linkedin{
+      padding: .4rem .6rem;
+      color: config.$background-color;
+      background-color: #fff;
+    }
+    &--google{
+      color: config.$background-color;
+      background-color: #fff;
+    }
+  }
+  @include config.laptop{
+    padding: .5rem;
+    &--linkedin{
+      padding: .5rem .6rem;
+    }
+  }
+}

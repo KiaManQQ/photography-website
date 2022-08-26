@@ -1,0 +1,27 @@
+@use './config';
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  margin: 0;
+  font-family: config.$main-font;
+  font-weight: config.$font-regular;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+#root{
+  @include config.laptop{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows:  10vh 90vh; 
+   }
+}
