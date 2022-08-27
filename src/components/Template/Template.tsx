@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react'
+import React, { useState, FC, ReactNode } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
@@ -11,9 +11,11 @@ import styles from './_template.module.scss'
 
 
 interface templateContent{
+  children: ReactNode
   title: string
-  content?: JSX.Element
 }
+
+
 
 const Template:FC<templateContent> = (props) => {
   const [login, setLogin] = useState<show>('hide')
@@ -67,10 +69,9 @@ const Template:FC<templateContent> = (props) => {
     onClick={deployMenu}/>
     </header>
     <main className={styles['main']}>
-        <h1 className={styles['title']}>{props.title}</h1>
-        {props.content}
+    <h1 className={styles['title']}>{props.title}</h1>
+      {props.children}
     </main>
-    {(props.title === 'Home') && <script src="https://cdn.jsdelivr.net/npm/macy@2"></script> }
     </>
   )
 }

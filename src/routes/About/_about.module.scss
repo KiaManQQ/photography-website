@@ -1,7 +1,6 @@
 @use '/src/base/config';
 
 .about{
-  padding-bottom: .5rem;
   @include config.laptop{
     display: grid;
     position: relative;
@@ -22,7 +21,7 @@
     }
     &__text{
       left: 50%;
-      font-size: 2rem;
+      font-size: 1.8rem;
       padding-inline: 2rem;
       &>h2{
         margin: 0;
@@ -42,7 +41,8 @@
     width: 50%;
     margin-inline: auto;
     font-size: 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
+    cursor: pointer;
     color: config.$text-color;
   }
 }

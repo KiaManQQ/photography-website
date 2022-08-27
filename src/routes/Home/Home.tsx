@@ -2,8 +2,11 @@ import React from 'react'
 import Template from '../../components/Template/Template'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
-const content = (
-  <>
+const Home = () => {
+  return (
+    <Template 
+    title='Home'
+    key={1}>
   <ResponsiveMasonry columnsCountBreakPoints={{400: 1, 750: 2, 900: 4}}>
     <Masonry gutter='1rem'>
       <img src={require('../../components/assets/img/gallery/1.webp')} alt='imagen de galería 1'/>
@@ -24,14 +27,7 @@ const content = (
       <img src={require('../../components/assets/img/gallery/2.webp')} alt='imagen de galería 2'/>
     </Masonry>
   </ResponsiveMasonry>
-  </>
-)
-
-const Home = () => {
-  return (
-    <Template 
-    title='Home'
-    content={content}/>
+    </Template>
     )
 }
 
