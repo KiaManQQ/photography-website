@@ -57,6 +57,7 @@ const Template:FC<templateContent> = (props) => {
       <Link to='/' className={styles['header__logo-container']}>
         <WebLogo size='big'/>
       </Link>
+    <div className={styles['login-container']}>
       <div className={styles['login']}>
         <FontAwesomeIcon icon={solid('user')}/>
         <button className={styles['login__cta']} onClick={deployLogin}>Log in</button>
@@ -67,6 +68,8 @@ const Template:FC<templateContent> = (props) => {
       </div>
     <FontAwesomeIcon icon={solid('bars')} size='2x' className={styles['burger-icon']}
     onClick={deployMenu}/>
+      </div>
+
     </header>
     <main className={styles['main']}>
     <h1 className={styles['title']}>{props.title}</h1>

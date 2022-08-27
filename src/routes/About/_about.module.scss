@@ -1,6 +1,7 @@
 @use '/src/base/config';
 
 .about{
+  padding-bottom: 1rem;
   @include config.laptop{
     display: grid;
     position: relative;

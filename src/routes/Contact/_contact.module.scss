@@ -2,16 +2,28 @@
 
 .contact{
   background-color: config.$dark-color;
-  height: 90vh;
   text-align: center;
+  height: 90vh;
   &__form{
     height: 100%;
   }
-  @include config.laptop{
-    height: 72vh;
-    position: relative;
+  &__map{
+    padding-bottom: 5rem;
+    &>iframe{
+      display: none;
+      @include config.laptop{
+        margin-inline: auto;
+        display: inherit;
+        height: 230px;
+        width: 500px;
+        
+      }
+    }
   }
-
+  @include config.laptop{
+    position: relative;
+    height: 72vh;
+  }
 }
 
 .form-contact {
@@ -58,7 +70,7 @@
     padding: .5rem 1rem;
     font-size: 1rem;
     border: 0;
-    border-radius: .3rem;
+    border-radius: .2rem;
     font-weight: config.$font-bold;
     color: config.$text-color;
     background-color: config.$primary-color;
@@ -66,3 +78,14 @@
   }
 }
 
+.social-media-container{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin-bottom: 1rem;
+  @include config.laptop{
+    width: 30%;
+  }
+}

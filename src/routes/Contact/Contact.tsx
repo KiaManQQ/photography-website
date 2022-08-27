@@ -28,11 +28,13 @@ const Contact = () =>{
           </div>
 
         </form>
-        <div className={styles['social-media-modifier']}>
+          <div className={styles['social-media-container']}>
+            <SocialMedia 
+            size='2x'
+            extended/>
+          </div>
         </div>
       </div>
-
-    </div>
     </Template>
   )
 }

@@ -154,3 +154,14 @@
     }
   }
 }
+
+.social-media-container{
+  width: 60%;
+  margin-inline: auto;
+  @include config.tablet{
+    width: 50%;
+  }
+  @include config.laptop{
+    width: 50%;
+  }
+}

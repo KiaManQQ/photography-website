@@ -26,8 +26,9 @@ const LoginForm:FC<showLightboxProps> = (props) => {
       
     <form className={styles['form']}>
       <h4 className={styles['form__title']}>Inicia sesión o Registrate para acceder</h4>
-
+    <div className={styles['social-media-container']}>
       <SocialMedia size='2x'/>
+    </div>
 
       <span>- O -</span>
 

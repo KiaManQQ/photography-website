@@ -1,33 +1,27 @@
 @use '/src/base/config';
 
 .social-media{
+  width: 100%;
   display: flex;
-  &__icon-container{
-    padding: 0 .7rem;
-  }
+  justify-content: space-between;
+  align-items: center;
   &__icon{
-    padding: .4rem;
+    background-color: config.$text-color;
+    color: config.$dark-color-3;
     border-radius: 50%;
-    cursor: pointer;
-    &--twitter{
-      color: config.$background-color;
-      background-color: #fff;
-    }
-    &--linkedin{
-      padding: .4rem .6rem;
-      color: config.$background-color;
-      background-color: #fff;
-    }
-    &--google{
-      color: config.$background-color;
-      background-color: #fff;
-    }
-  }
-  @include config.laptop{
     padding: .5rem;
-    &--linkedin{
-      padding: .5rem .6rem;
+    cursor: pointer;
+    @include config.tablet{
+      padding: .4rem;
+    }
+    @include config.laptop{
+      padding: .7rem;
     }
   }
-}
+  &__icon-extended{
+    cursor: pointer;
+  }
+  }
+
+
 

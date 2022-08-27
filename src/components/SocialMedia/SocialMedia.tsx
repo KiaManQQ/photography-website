@@ -6,28 +6,24 @@ import styles from './_social-media.module.scss'
 import cn from 'classnames'
 
 interface iconSize{
-  size?: SizeProp;
+  size?: SizeProp
+  extended?: boolean
 }
 
 export const SocialMedia:FC<iconSize> = (props) => {
+  const {extended} = props
   return (
-    <div className={styles['social-media']}>
+      <div className={styles['social-media']}>
 
-      <div className={styles['social-media__icon-container']}>
         <FontAwesomeIcon icon={brands('twitter')} size={props.size} 
-        className={cn(styles['social-media__icon'], [styles['social-media__icon--twitter']])}/>
-      </div>
+        className={(!extended) ? styles['social-media__icon'] : styles['social-media__icon-extended']}/>
 
-      <div className={styles['social-media__icon-container']}>
-        <FontAwesomeIcon icon={brands('linkedin')} size={props.size} 
-        className={cn(styles['social-media__icon'], [styles['social-media__icon--linkedin']])}/>
-      </div>
+      <FontAwesomeIcon icon={brands('linkedin')} size={props.size} 
+        className={(!extended) ? styles['social-media__icon'] : styles['social-media__icon-extended']}/>
 
-      <div className={styles['social-media__icon-container']}>
-        <FontAwesomeIcon icon={brands('google')} size={props.size} 
-        className={cn(styles['social-media__icon'], [styles['social-media__icon--google']])}/>
-      </div>
-
+   
+      <FontAwesomeIcon icon={brands('google')} size={props.size} 
+        className={(!extended) ? styles['social-media__icon'] : styles['social-media__icon-extended']}/>
     </div>
   )
 }
