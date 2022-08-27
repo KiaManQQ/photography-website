@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './routes/Home/Home'
 import Contact from './routes/Contact/Contact'
 import About from './routes/About/About'
-import NotFound from './routes/Error/Error'
 
 
 const root = ReactDOM.createRoot(
@@ -18,8 +17,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path='*' element={<NotFound/>}/>
+        <Route path="/photography-website" element={<Home/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='about' element={<About/>}/>
       </Routes>

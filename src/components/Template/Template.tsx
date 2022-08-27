@@ -54,7 +54,7 @@ const Template:FC<templateContent> = (props) => {
   </div>
 
   <header className={styles['header']}>
-      <Link to='/' className={styles['header__logo-container']}>
+      <Link to='/photography-website' className={styles['header__logo-container']}>
         <WebLogo size='big'/>
       </Link>
     <div className={styles['login-container']}>
