@@ -46,7 +46,7 @@ const Template:FC<templateContent> = (props) => {
     
     <nav className={styles['menu']}>
       <ul className={styles['menu__elements']}>
-        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/photography-website'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
       </ul>
