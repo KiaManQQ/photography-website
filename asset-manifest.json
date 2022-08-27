@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad62b2b3.css",
-    "main.js": "/static/js/main.26569522.js",
-    "static/media/about2.jpg": "/static/media/about2.bc6ecf39dfb5e44e08aa.jpg",
-    "static/media/about3.jpg": "/static/media/about3.104be16379396124b53d.jpg",
-    "static/media/3.webp": "/static/media/3.e6e0c9c923374d683761.webp",
-    "static/media/contact.jpg": "/static/media/contact.7efe9aa3cfa8eff4bb91.jpg",
-    "static/media/6.webp": "/static/media/6.9bf65b64b722449f2415.webp",
-    "static/media/5.webp": "/static/media/5.d017e09f7ad0cc0dfe39.webp",
-    "static/media/4.webp": "/static/media/4.a7b2a4c2428c0b5faafb.webp",
-    "static/media/logo.png": "/static/media/logo.766eee65bef87bbce9e1.png",
-    "static/media/2.webp": "/static/media/2.3ff651562339ac7dd934.webp",
-    "static/media/about.jpg": "/static/media/about.1c1d6e54f575628b4a57.jpg",
-    "static/media/1.webp": "/static/media/1.dc6e4ec44ff9ebd6e31f.webp",
-    "static/media/9.webp": "/static/media/9.d7c0083d1f7ae311b291.webp",
-    "static/media/7.webp": "/static/media/7.6c76b2012a2d08fd6f9a.webp",
-    "static/media/8.webp": "/static/media/8.369c8eba25c613ce4326.webp",
-    "index.html": "/index.html",
-    "main.ad62b2b3.css.map": "/static/css/main.ad62b2b3.css.map",
-    "main.26569522.js.map": "/static/js/main.26569522.js.map"
+    "main.css": "/photography-website/static/css/main.ad62b2b3.css",
+    "main.js": "/photography-website/static/js/main.141c9a5a.js",
+    "static/media/about2.jpg": "/photography-website/static/media/about2.bc6ecf39dfb5e44e08aa.jpg",
+    "static/media/about3.jpg": "/photography-website/static/media/about3.104be16379396124b53d.jpg",
+    "static/media/3.webp": "/photography-website/static/media/3.e6e0c9c923374d683761.webp",
+    "static/media/contact.jpg": "/photography-website/static/media/contact.7efe9aa3cfa8eff4bb91.jpg",
+    "static/media/6.webp": "/photography-website/static/media/6.9bf65b64b722449f2415.webp",
+    "static/media/5.webp": "/photography-website/static/media/5.d017e09f7ad0cc0dfe39.webp",
+    "static/media/4.webp": "/photography-website/static/media/4.a7b2a4c2428c0b5faafb.webp",
+    "static/media/logo.png": "/photography-website/static/media/logo.766eee65bef87bbce9e1.png",
+    "static/media/2.webp": "/photography-website/static/media/2.3ff651562339ac7dd934.webp",
+    "static/media/about.jpg": "/photography-website/static/media/about.1c1d6e54f575628b4a57.jpg",
+    "static/media/1.webp": "/photography-website/static/media/1.dc6e4ec44ff9ebd6e31f.webp",
+    "static/media/9.webp": "/photography-website/static/media/9.d7c0083d1f7ae311b291.webp",
+    "static/media/7.webp": "/photography-website/static/media/7.6c76b2012a2d08fd6f9a.webp",
+    "static/media/8.webp": "/photography-website/static/media/8.369c8eba25c613ce4326.webp",
+    "index.html": "/photography-website/index.html",
+    "main.ad62b2b3.css.map": "/photography-website/static/css/main.ad62b2b3.css.map",
+    "main.141c9a5a.js.map": "/photography-website/static/js/main.141c9a5a.js.map"
   },
   "entrypoints": [
     "static/css/main.ad62b2b3.css",
-    "static/js/main.26569522.js"
+    "static/js/main.141c9a5a.js"
   ]
 }
