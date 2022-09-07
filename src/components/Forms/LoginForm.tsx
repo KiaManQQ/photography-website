@@ -1,20 +1,23 @@
-import React, { FC } from 'react'
-import styles from './_forms.module.scss'
-import cn from 'classnames'
-import { SocialMedia } from '../SocialMedia/SocialMedia'
-import { show } from '../../base/customTypes'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import React, { FC } from 'react';
+import styles from './_forms.module.scss';
+import cn from 'classnames';
+import { SocialMedia } from '../SocialMedia/SocialMedia';
+import { show } from '../../base/customTypes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
-interface showLightboxProps{
-  showLightbox: show
-  click: any
+interface showLightboxProps
+{
+  showLightbox: show;
+  click: any;
 }
 
-const LoginForm:FC<showLightboxProps> = (props) => {
+const LoginForm:FC<showLightboxProps> = (props) => 
+{
 
-  const handleSubmit = (e: React.MouseEvent<HTMLInputElement>) => {
-    e.preventDefault()
+  const handleSubmit = (e: React.MouseEvent<HTMLInputElement>) => 
+  {
+    e.preventDefault();
   }
 
   return (
@@ -60,4 +63,4 @@ const LoginForm:FC<showLightboxProps> = (props) => {
   )
 }
 
-export default LoginForm
+export default LoginForm;

@@ -1,45 +1,51 @@
-import React, { useState, FC, ReactNode } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
-import { WebLogo } from '../WebLogo/WebLogo'
-import { show } from '../../base/customTypes'
-import LoginForm from '../Forms/LoginForm'
-import RegisterForm from '../Forms/RegisterForm'
-import cn from 'classnames'
-import styles from './_template.module.scss'
+import React, { useState, FC, ReactNode } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { WebLogo } from '../WebLogo/WebLogo';
+import { show } from '../../base/customTypes';
+import LoginForm from '../Forms/LoginForm';
+import RegisterForm from '../Forms/RegisterForm';
+import cn from 'classnames';
+import styles from './_template.module.scss';
 
 
-interface templateContent{
-  children: ReactNode
-  title: string
+interface templateContent
+{
+  children: ReactNode;
+  title: string;
 }
 
 
 
-const Template:FC<templateContent> = (props) => {
-  const [login, setLogin] = useState<show>('hide')
-  const [register, setRegister] = useState<show>('hide')
-  const [menu, setMenu] = useState<show>('hide')
+const Template:FC<templateContent> = (props) => 
+{
+  const [login, setLogin] = useState<show>('hide');
+  const [register, setRegister] = useState<show>('hide');
+  const [menu, setMenu] = useState<show>('hide');
 
-  const deployMenu = ():void =>{
-    (menu === 'hide') ? setMenu('show') : setMenu('hide')
+  const deployMenu = ():void =>
+  {
+    (menu === 'hide') ? setMenu('show') : setMenu('hide');
   }
 
-  const deployLogin = ():void => {
-    (login === 'hide') ? setLogin('show') : setLogin('hide')
+  const deployLogin = ():void => 
+  {
+    (login === 'hide') ? setLogin('show') : setLogin('hide');
   }
 
-  const deployRegister = ():void => {
-    (register === 'hide') ? setRegister('show') : setRegister('hide')
+  const deployRegister = ():void => 
+  {
+    (register === 'hide') ? setRegister('show') : setRegister('hide');
   }
 
-  return (
+  return 
+  (
     <>
     <LoginForm showLightbox={login} click={deployLogin}/>
     <RegisterForm showRegister={register} click={deployRegister}/>
 
-    <div className={cn(styles['sidebar'], [styles[`sidebar--${menu}`]])}>
+    <div className = {cn(styles['sidebar'], [styles[`sidebar--${menu}`]])}>
 
     <FontAwesomeIcon 
       icon={solid('xmark')} size='3x' className={styles['close-menu']} onClick={deployMenu}/>

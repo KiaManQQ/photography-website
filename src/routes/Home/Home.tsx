@@ -1,8 +1,9 @@
-import React from 'react'
-import Template from '../../components/Template/Template'
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import React from 'react';
+import Template from '../../components/Template/Template';
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
-const Home = () => {
+const Home = () => 
+{
   return (
     <Template 
     title='Home'
@@ -32,4 +33,4 @@ const Home = () => {
 }
 
 
-export default Home
+export default Home;

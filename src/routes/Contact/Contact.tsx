@@ -1,10 +1,11 @@
-import React from 'react'
-import { SocialMedia } from '../../components/SocialMedia/SocialMedia'
-import Template from '../../components/Template/Template'
-import styles from './_contact.module.scss'
+import React from 'react';
+import { SocialMedia } from '../../components/SocialMedia/SocialMedia';
+import Template from '../../components/Template/Template';
+import styles from './_contact.module.scss';
 
 
-const Contact = () =>{
+const Contact = () =>
+{
   return (
     <Template 
     title='Contact'
@@ -39,4 +40,4 @@ const Contact = () =>{
   )
 }
 
-export default Contact
+export default Contact;

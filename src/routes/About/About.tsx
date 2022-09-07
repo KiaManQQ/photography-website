@@ -28,17 +28,20 @@ const Slide:FC<SlideProps> = (props) => {
 }
 
 
-const About = () =>{
+const About = () =>
+{
 
-  const [show, setShow] = useState(1)
+  const [show, setShow] = useState(1);
 
-  const prev = () => {
+  const prev = () => 
+  {
     (show === 1) ? setShow(3) :
-    setShow((prevShow) => prevShow - 1)
+    setShow((prevShow) => prevShow - 1);
   }
-  const next = () => {
+  const next = () => 
+  {
     (show === 3) ? setShow(1) :
-    setShow((prevShow) => prevShow + 1)
+    setShow((prevShow) => prevShow + 1);
   }
 
 
@@ -83,4 +86,4 @@ const About = () =>{
     )
 }
 
-export default About
+export default About;

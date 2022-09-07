@@ -1,17 +1,19 @@
-import React, { FC } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { FC } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
-import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
-import styles from './_social-media.module.scss'
-import cn from 'classnames'
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import styles from './_social-media.module.scss';
 
-interface iconSize{
-  size?: SizeProp
-  extended?: boolean
+interface iconSize
+{
+  size?: SizeProp;
+  extended?: boolean;
 }
 
-export const SocialMedia:FC<iconSize> = (props) => {
-  const {extended} = props
+export const SocialMedia:FC<iconSize> = (props) => 
+{
+  const { extended } = props;
+  
   return (
       <div className={styles['social-media']}>
 

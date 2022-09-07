@@ -1,17 +1,19 @@
-import React, { FC } from 'react'
-import styles from './_forms.module.scss'
-import cn from 'classnames'
-import { show } from '../../base/customTypes'
-import { SocialMedia } from '../SocialMedia/SocialMedia'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import React, { FC } from 'react';
+import styles from './_forms.module.scss';
+import cn from 'classnames';
+import { show } from '../../base/customTypes';
+import { SocialMedia } from '../SocialMedia/SocialMedia';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
-interface registerProps{
-  showRegister: show
-  click: any
+interface registerProps
+{
+  showRegister: show;
+  click: any;
 }
 
-const RegisterForm:FC<registerProps> = (props) => {
+const RegisterForm:FC<registerProps> = (props) => 
+{
   return (
     <div className={cn(styles['lightbox'],
     [styles[`lightbox--${props.showRegister}`]])}>
@@ -66,4 +68,4 @@ const RegisterForm:FC<registerProps> = (props) => {
   )
 }
 
-export default RegisterForm
+export default RegisterForm;

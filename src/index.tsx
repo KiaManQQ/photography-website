@@ -1,12 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './base/_base.scss'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './base/_base.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Routes
-import Home from './routes/Home/Home'
-import Contact from './routes/Contact/Contact'
-import About from './routes/About/About'
+import Home from './routes/Home/Home';
+import Contact from './routes/Contact/Contact';
+import About from './routes/About/About';
 
 
 const root = ReactDOM.createRoot(
