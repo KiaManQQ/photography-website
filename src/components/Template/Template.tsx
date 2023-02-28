@@ -39,8 +39,7 @@ const Template:FC<templateContent> = (props) =>
     (register === 'hide') ? setRegister('show') : setRegister('hide');
   }
 
-  return 
-  (
+  return (
     <>
     <LoginForm showLightbox={login} click={deployLogin}/>
     <RegisterForm showRegister={register} click={deployRegister}/>
